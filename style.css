@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "QuickSand";
+  src: local("QuickSand"),
+    url(../fonts/Quicksand/Quicksand.ttf) format("truetype");
+}
+
 body {
   margin: 0;
 }
@@ -7,12 +13,22 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
   height: 100vh;
+  padding: 10px;
+}
+
+a {
+  color: black;
+  font-family: "QuickSand";
+  font-size: small;
 }
 
 @media only screen and (min-width: 992px) {
   .hero {
     background-image: url("../images/hero-desktop.jpg");
+    padding: 25px;
+  }
+  a {
+    font-size: 30px;
   }
 }
